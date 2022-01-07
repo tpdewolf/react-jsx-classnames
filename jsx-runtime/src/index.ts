@@ -1,6 +1,10 @@
+// @ts-ignore
 import { Fragment, jsx as jsx_, jsxs as jsxs_ } from "react/jsx-runtime";
+// @ts-ignore
 import { jsxDEV as jsxDEV_ } from "react/jsx-dev-runtime";
 import { transformProps } from "./utils";
+import type { ClassValue } from "clsx";
+import * as React from "react";
 
 function jsx(type, props, ...args) {
   return jsx_(type, transformProps(props), ...args);
@@ -12,6 +16,13 @@ function jsxs(type, props, ...args) {
 
 function jsxDEV(type, props, ...args) {
   return jsxDEV_(type, transformProps(props), ...args);
+}
+
+declare module "react" {
+  interface Attributes extends React.Attributes {
+    classNames?: ClassValue;
+    clsx?: ClassValue;
+  }
 }
 
 export { Fragment, jsx, jsxs, jsxDEV };

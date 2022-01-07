@@ -75,9 +75,10 @@
     "react": ">=17"
   },
   "devDependencies": {
+    "@types/react": "^17.0.38",
+    "clsx": "^1.1.1",
     "microbundle": "^0.14.2",
     "npm-run-all": "^4.1.5",
-    "react": "^17.0.2",
-    "clsx": "^1.1.1"
+    "react": "^17.0.2"
   }
 }
