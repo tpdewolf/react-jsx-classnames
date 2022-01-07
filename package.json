@@ -33,7 +33,11 @@
     "build": "npm-run-all --parallel build:*",
     "build:root": "microbundle build --raw",
     "build:jsx": "microbundle build --raw --cwd jsx-runtime",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "test": "echo 'No tests yet'"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "src",
