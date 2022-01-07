@@ -2,6 +2,7 @@
   "name": "@tpdewolf/react-jsx-classnames",
   "type": "module",
   "source": "src/index.js",
+  "version": "0.0.0",
   "exports": {
     ".": {
       "browser": "./dist/index.module.js",
@@ -34,6 +35,37 @@
     "build:jsx": "microbundle build --raw --cwd jsx-runtime",
     "dev": "microbundle watch"
   },
+  "files": [
+    "src",
+    "dist",
+    "compat/dist",
+    "compat/src",
+    "compat/server.js",
+    "compat/server.mjs",
+    "compat/scheduler.js",
+    "compat/scheduler.mjs",
+    "compat/test-utils.js",
+    "compat/jsx-runtime.js",
+    "compat/jsx-runtime.mjs",
+    "compat/jsx-dev-runtime.js",
+    "compat/jsx-dev-runtime.mjs",
+    "compat/package.json",
+    "debug/dist",
+    "debug/src",
+    "debug/package.json",
+    "devtools/dist",
+    "devtools/src",
+    "devtools/package.json",
+    "hooks/dist",
+    "hooks/src",
+    "hooks/package.json",
+    "jsx-runtime/dist",
+    "jsx-runtime/src",
+    "jsx-runtime/package.json",
+    "test-utils/src",
+    "test-utils/package.json",
+    "test-utils/dist"
+  ],
   "peerDependencies": {
     "clsx": "^1.1.1",
     "react": ">=17"
