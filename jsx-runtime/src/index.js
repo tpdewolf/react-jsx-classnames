@@ -6,19 +6,16 @@ import {
 } from "react/jsx-runtime";
 import { transformProps } from "./utils";
 
-function jsx(type, props) {
-  arguments[1] = transformProps(props);
-  return jsx_.apply(this, arguments);
+function jsx(type, props, ...args) {
+  return jsx_(type, transformProps(props), ...args);
 }
 
-function jsxs(type, props) {
-  arguments[1] = transformProps(props);
-  return jsxs_.apply(this, arguments);
+function jsxs(type, props, ...args) {
+  return jsxs_(type, transformProps(props), ...args);
 }
 
-function jsxDEV(type, props) {
-  arguments[1] = transformProps(props);
-  return jsxDEV_.apply(this, arguments);
+function jsxDEV(type, props, ...args) {
+  return jsxDEV_(type, transformProps(props), ...args);
 }
 
 export { Fragment, jsx, jsxs, jsxDEV };
