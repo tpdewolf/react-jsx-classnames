@@ -1,0 +1,21 @@
+{
+  "name": "jsx-runtime",
+  "amdName": "jsxRuntime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JSX runtime",
+  "main": "dist/jsxRuntime.js",
+  "module": "dist/jsxRuntime.module.js",
+  "umd:main": "dist/jsxRuntime.umd.js",
+  "source": "src/index.js",
+  "types": "src/index.d.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "clsx": "^1.1.1",
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "clsx": "^1.1.1",
+    "react": "^17.0.2"
+  }
+}

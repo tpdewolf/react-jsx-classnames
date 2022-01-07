@@ -1,0 +1,47 @@
+{
+  "name": "@tpdewolf/react-jsx-classnames",
+  "type": "module",
+  "source": "src/index.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.js",
+      "umd": "./dist/index.umd.js",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./jsx-runtime": {
+      "browser": "./jsx-runtime/dist/jsxRuntime.module.js",
+      "umd": "./jsx-runtime/dist/jsxRuntime.umd.js",
+      "require": "./jsx-runtime/dist/jsxRuntime.js",
+      "import": "./jsx-runtime/dist/jsxRuntime.mjs"
+    },
+    "./jsx-dev-runtime": {
+      "browser": "./jsx-runtime/dist/jsxRuntime.module.js",
+      "umd": "./jsx-runtime/dist/jsxRuntime.umd.js",
+      "require": "./jsx-runtime/dist/jsxRuntime.js",
+      "import": "./jsx-runtime/dist/jsxRuntime.mjs"
+    },
+    "./package.json": "./package.json",
+    "./jsx-runtime/package.json": "./jsx-runtime/package.json"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "build:root": "microbundle build --raw",
+    "build:jsx": "microbundle build --raw --cwd jsx-runtime",
+    "dev": "microbundle watch"
+  },
+  "peerDependencies": {
+    "clsx": "^1.1.1",
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "clsx": "^1.1.1"
+  }
+}
