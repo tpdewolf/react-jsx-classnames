@@ -2,7 +2,7 @@
   "name": "@tpdewolf/react-jsx-classnames",
   "type": "module",
   "source": "src/index.js",
-  "version": "0.0.3-0",
+  "version": "0.0.3-1",
   "exports": {
     ".": {
       "browser": "./dist/index.module.js",
