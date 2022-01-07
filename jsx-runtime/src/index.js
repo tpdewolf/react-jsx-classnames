@@ -1,9 +1,4 @@
-import {
-  Fragment,
-  jsx as jsx_,
-  jsxs as jsxs_,
-  jsxDEV as jsxDEV_,
-} from "react/jsx-runtime";
+import { Fragment, jsx as jsx_, jsxs as jsxs_ } from "react/jsx-runtime";
 import { jsxDEV as jsxDEV_ } from "react/jsx-dev-runtime";
 import { transformProps } from "./utils";
 
