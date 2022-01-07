@@ -4,6 +4,7 @@ import {
   jsxs as jsxs_,
   jsxDEV as jsxDEV_,
 } from "react/jsx-runtime";
+import { jsxDEV as jsxDEV_ } from "react/jsx-dev-runtime";
 import { transformProps } from "./utils";
 
 function jsx(type, props, ...args) {
